@@ -1,1 +1,13 @@
-<p>imagen-filtrar works!</p>
+<div class="photo-container" *ngIf="filteredPhotos.length">
+    <mat-grid-list cols="3" rowHeight="2:1">
+      <mat-grid-tile *ngFor="let photo of filteredPhotos">
+        <img mat-card-image [src]="photo.thumbnailUrl" alt="{{ photo.title }}">
+        <mat-grid-tile-footer>
+          <h3 mat-line>{{ photo.title }}</h3>
+        </mat-grid-tile-footer>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+  <div *ngIf="!filteredPhotos.length">
+    Cargando fotos que el titulo empiece con 'a', 'r', or 's'.
+  </div>

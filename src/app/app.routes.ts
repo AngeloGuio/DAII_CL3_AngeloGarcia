@@ -11,7 +11,7 @@ export const routes: Routes = [
         children: [
             {path: "home", component: HomeComponent},
             {path: "episodie", component: EpisodiesListaComponent},
-            {path: "imagenes/:titulo", component: ImagenFiltrarComponent},
+            {path: "imagenes", component: ImagenFiltrarComponent},
             
         ]
     },
