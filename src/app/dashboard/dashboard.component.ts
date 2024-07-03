@@ -26,7 +26,7 @@ export class DashboardComponent {
   
     }
     irEpisodies():void{
-      this.router.navigate(["episodie/:idepisodie"],{relativeTo: this.route})
+      this.router.navigate(["episodie"],{relativeTo: this.route})
     }
     irImagenes():void{
       this.router.navigate(["imagenes/:titulo"],{relativeTo: this.route})
